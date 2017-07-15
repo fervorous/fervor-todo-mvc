@@ -1,0 +1,16 @@
+{
+  "name": "goalboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "molecule": "file:./../molecule/"
+  }
+}
