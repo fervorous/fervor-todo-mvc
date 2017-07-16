@@ -4,12 +4,14 @@ import gql from 'graphql-tag';
 import { graphql, compose } from 'react-apollo';
 import { Link } from 'react-router-dom';
 
+import styles from './styles/people.scss';
+
 const People = ({data}) => {
   if (typeof data.allPeople === 'undefined') {
     return <div>Loading</div>;
   }
   return (
-    <ul>
+    <ul className={styles.component}>
       { data.allPeople.nodes.map((person) => (
         <li key={person.nodeId}>
           <Link to={`/people/${person.nodeId}`}>
