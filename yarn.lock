@@ -2401,9 +2401,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@^0.0.46:
-  version "0.0.46"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.46.tgz#4d4d4c138c68ef1002159bb1c416682302f2b8e1"
+fervor@^0.0.47:
+  version "0.0.47"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.47.tgz#ba9f33d9b9e0c04033f4b73a5fa9a0d748a2db43"
   dependencies:
     apollo-local-query "^0.3.0"
     babel-cli "^6.24.1"
