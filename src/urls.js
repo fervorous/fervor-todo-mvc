@@ -1,6 +1,6 @@
-import About from './About';
-import People from './People';
-import Profile from './Profile';
+import About from './apps/About';
+import People from './apps/People';
+import Profile from './apps/Profile';
 
 export default {
   '/': About,

@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "8.2.1"
+  },
+  "scripts": {
+    "build": "fervor build",
+    "heroku-postbuild": "fervor build",
+    "start": "DISABLE_DOT_ENV=true fervor start",
+    "start:dev": "fervor startDev",
+    "start:dev:debug": "fervor-debug startDev",
+    "start:prod": "fervor start"
+  },
   "dependencies": {
-    "molecule": "file:./../molecule/"
+    "fervor": "^0.0.46"
   }
 }
