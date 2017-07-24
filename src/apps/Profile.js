@@ -4,10 +4,10 @@ import gql from 'graphql-tag';
 import { graphql, compose } from 'react-apollo';
 
 const Profile = ({data}) => {
-  if (typeof data.person === 'undefined') {
+  if (typeof data.personById === 'undefined') {
     return <div>Loading</div>;
   };
-  return <div>Hello {data.person.firstName}</div>;
+  return <div>Hello {data.personById.firstName}</div>;
 };
 Profile.propTypes = {
   data: PropTypes.object.isRequired,
