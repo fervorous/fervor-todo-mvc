@@ -15,9 +15,9 @@ Profile.propTypes = {
 };
 
 const QueryProfile = (gql`
-  query ProfileQuery($nodeId: ID!) {
-    person(nodeId: $nodeId) {
-      nodeId
+  query ProfileQuery($id: Int!) {
+    personById(id:$id) {
+      id
       firstName
       lastName
     }
@@ -25,6 +25,6 @@ const QueryProfile = (gql`
 
 export default compose(
   graphql(QueryProfile, {
-      options: ({ match: { params: { id }} }) => ({ variables: { nodeId: id } }),
+      options: ({ match: { params: { id }} }) => ({ variables: { id: id } }),
   }),
 )(Profile);

@@ -2401,9 +2401,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@^0.0.47:
-  version "0.0.47"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.47.tgz#ba9f33d9b9e0c04033f4b73a5fa9a0d748a2db43"
+fervor@^0.0.48:
+  version "0.0.48"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.48.tgz#35a42fd1d07cabd1661ad3743456fedf6ec38a2c"
   dependencies:
     apollo-local-query "^0.3.0"
     babel-cli "^6.24.1"
@@ -2446,7 +2446,7 @@ fervor@^0.0.47:
     pg-pool "^1.7.1"
     postcss-loader "^2.0.6"
     postcss-scss "^1.0.2"
-    postgraphql "^3.2.0"
+    postgraphql "^3.3.0"
     prop-types "^15.5.10"
     react "^15.0.0"
     react-apollo "^1.4.2"
@@ -4732,9 +4732,9 @@ postcss@^6.0.1, postcss@^6.0.2, postcss@^6.0.3:
     source-map "^0.5.6"
     supports-color "^4.2.0"
 
-postgraphql@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/postgraphql/-/postgraphql-3.2.0.tgz#925aa4aad201f662747d97ce463a207a5dd0afab"
+postgraphql@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/postgraphql/-/postgraphql-3.3.0.tgz#db67915148a843c96277f48200b22da45b019cb2"
   dependencies:
     body-parser "^1.15.2"
     chalk "1.1.3"

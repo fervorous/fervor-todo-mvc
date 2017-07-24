@@ -13,8 +13,8 @@ const People = ({data}) => {
   return (
     <ul className={styles.component}>
       { data.allPeople.nodes.map((person) => (
-        <li key={person.nodeId}>
-          <Link to={`/people/${person.nodeId}`}>
+        <li key={person.id}>
+          <Link to={`/people/${person.id}`}>
             { `${person.firstName} ${person.lastName}` }
           </Link>
         </li>
@@ -31,7 +31,7 @@ export default compose(
     query PeopleQuery {
       allPeople {
         nodes {
-          nodeId
+          id
           firstName
           lastName
         }
