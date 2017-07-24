@@ -3,28 +3,31 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { graphql, compose } from 'react-apollo';
 
-const Profile = ({data}) => {
-  if (typeof data.personById === 'undefined') {
+const Goal = ({data}) => {
+  if (typeof data.goalById === 'undefined') {
     return <div>Loading</div>;
   };
-  return <div>Hello {data.personById.firstName}</div>;
+  return <div>
+    <h1>Goal Name: {data.goalById.name}</h1>
+    <div>Is Completed: {data.goalById.completed ? 'Yes' : 'No'}</div>
+  </div>;
 };
-Profile.propTypes = {
+Goal.propTypes = {
   data: PropTypes.object.isRequired,
   match: PropTypes.object.isRequired,
 };
 
-const QueryProfile = (gql`
-  query ProfileQuery($id: Int!) {
-    personById(id:$id) {
+const GoalQuery = (gql`
+  query GoalQuery($id: Int!) {
+    goalById(id: $id) {
       id
-      firstName
-      lastName
+      name
+      completed
     }
   }`);
 
 export default compose(
-  graphql(QueryProfile, {
+  graphql(GoalQuery, {
       options: ({ match: { params: { id }} }) => ({ variables: { id: id } }),
   }),
-)(Profile);
+)(Goal);

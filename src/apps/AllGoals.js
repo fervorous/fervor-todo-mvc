@@ -4,38 +4,38 @@ import gql from 'graphql-tag';
 import { graphql, compose } from 'react-apollo';
 import { Link } from 'react-router-dom';
 
-import styles from './styles/people.scss';
+import styles from './styles/allgoals.scss';
 
-const People = ({data}) => {
-  if (typeof data.allPeople === 'undefined') {
+const AllGoals = ({data}) => {
+  if (typeof data.allGoals === 'undefined') {
     return <div>Loading</div>;
   }
   return (
     <ul className={styles.component}>
-      { data.allPeople.nodes.map((person) => (
-        <li key={person.id}>
-          <Link to={`/people/${person.id}`}>
-            { `${person.firstName} ${person.lastName}` }
+      { data.allGoals.nodes.map((goal) => (
+        <li key={goal.id}>
+          <Link to={`/goal/${goal.id}`}>
+            { `${goal.name} Completed?: ${goal.completed}` }
           </Link>
         </li>
       ))}
     </ul>
   );
 };
-People.propTypes = {
+AllGoals.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export default compose(
   graphql(gql`
-    query PeopleQuery {
-      allPeople {
+    query AllGoals {
+      allGoals {
         nodes {
           id
-          firstName
-          lastName
+          name
+          completed
         }
       }
     }
   `),
-)(People);
+)(AllGoals);

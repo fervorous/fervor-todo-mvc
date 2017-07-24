@@ -1,9 +1,9 @@
 import About from './apps/About';
-import People from './apps/People';
-import Profile from './apps/Profile';
+import AllGoals from './apps/AllGoals';
+import Goal from './apps/Goal';
 
 export default {
   '/': About,
-  '/people': People,
-  '/people/:id': Profile,
+  '/goal': AllGoals,
+  '/goal/:id': Goal,
 };

@@ -7,14 +7,14 @@
     "node": "8.2.1"
   },
   "scripts": {
-    "build": "fervor build",
-    "heroku-postbuild": "fervor build",
-    "start": "DISABLE_DOT_ENV=true fervor start",
+    "build": "fervor migrate:latest; fervor build",
+    "heroku-postbuild": "fervor migrate:latest; fervor build",
+    "start": "fervor start",
     "start:dev": "fervor startDev",
     "start:dev:debug": "fervor-debug startDev",
     "start:prod": "fervor start"
   },
   "dependencies": {
-    "fervor": "^0.0.55"
+    "fervor": "^0.0.57"
   }
 }

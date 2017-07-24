@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default () => (
   <div>
-    About
-    <Link to="/people">People</Link>
+    <h1>Welcome!</h1>
+    <Link to="/goal">Goals</Link>
   </div>
 );
