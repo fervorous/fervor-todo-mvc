@@ -3,7 +3,8 @@ Fervor Demo App
 
 ## How to run on Heroku?
 
-1. `heroku create`
-2. `heroku addons:create heroku-postgresql`
-3. `heroku config:set DISABLE_DOT_ENV=true`
-4. push
+1. Init - `heroku create`
+2. Add Postgres - `heroku addons:create heroku-postgresql`
+3. Disable .env - `heroku config:set DISABLE_DOT_ENV=true`
+4. Set HOST - `heroku config:set HOST=https://goalboard-fervor-test.herouapp.com`
+4. Push `git push heroku master`
