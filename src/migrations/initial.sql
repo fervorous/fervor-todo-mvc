@@ -16,12 +16,7 @@ CREATE TABLE person (
     CONSTRAINT person_last_name_check CHECK ((char_length(last_name) < 80))
 );
 
-CREATE SEQUENCE person_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
+CREATE SEQUENCE person_id_seq START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;
 
 ALTER SEQUENCE person_id_seq OWNED BY person.id;
 ALTER TABLE ONLY person ALTER COLUMN id SET DEFAULT nextval('person_id_seq'::regclass);
