@@ -16,8 +16,16 @@ export default () => (
       </p>
       <ul>
         <li><Link to="/">Fervor's TodoMVC Demo!</Link></li>
-        <li><Link to="https://github.com/fervorous/fervor">github.com/fervorous/fervor</Link></li>
-        <li><Link to="https://github.com/fervorous/fervor-todo-mvc">github.com/fervorous/fervor-todo-mvc</Link></li>
+        <li>
+          <a href="https://github.com/fervorous/fervor" target="_blank">
+            github.com/fervorous/fervor
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/fervorous/fervor-todo-mvc" target="_blank">
+            github.com/fervorous/fervor-todo-mvc
+          </a>
+        </li>
       </ul>
     </article>
   </Template>
