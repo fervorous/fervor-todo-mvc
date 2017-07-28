@@ -1,6 +1,8 @@
 Fervor TodoMVC Demo
 ----
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## TODO
 1. Filtering
 2. Counts
