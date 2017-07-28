@@ -2,5 +2,20 @@
   "name": "Fervor TodoMVC",
   "description": "TodoMVC example app for the Fervor framework",
   "repository": "https://github.com/fervorous/fervor-todo-mvc",
-  "keywords": ["node", "fervor", "graphql", "koa"]
+  "keywords": ["node", "fervor", "graphql", "koa"],
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "env": {
+    "DISABLE_DOT_ENV": {
+      "description": "allows for standard heroku environment variable behavior",
+      "value": true
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
+    }
+  },
+  "scripts": {
+    "postdeploy": "heroku config:set HOST=\"https://$HEROKU_APP_NAME.herokuapp.com\""
+  }
 }

@@ -1,7 +1,7 @@
 Fervor Demo App
 ----
 
-## How to run on Heroku?
+## Manual setup for heroku
 
 1. Init - `heroku create`
 2. Add Postgres - `heroku addons:create heroku-postgresql`
