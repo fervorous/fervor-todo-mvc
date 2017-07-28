@@ -15,6 +15,7 @@
     "start:prod": "fervor start"
   },
   "dependencies": {
-    "fervor": "^0.0.57"
+    "classnames": "^2.2.5",
+    "fervor": "^0.0.60"
   }
 }
