@@ -10,12 +10,6 @@
     "DISABLE_DOT_ENV": {
       "description": "allows for standard heroku environment variable behavior",
       "value": "true"
-    },
-    "HEROKU_APP_NAME": {
-      "required": true
     }
-  },
-  "scripts": {
-    "postdeploy": "heroku config:set HOST=\"https://$HEROKU_APP_NAME.herokuapp.com\""
   }
 }

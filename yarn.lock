@@ -1786,13 +1786,13 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@*, debug@2.6.8, "debug@>=2 <3", debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8:
+debug@*, debug@2.6.8, "debug@>=2 <3", debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
     ms "2.0.0"
 
-debug@2.3.3:
+debug@2.3.3, debug@^2.1.1:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
   dependencies:
@@ -2420,9 +2420,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@^0.0.61:
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.61.tgz#47769cca022f8fefcefdc8f6cdd85052daf238a8"
+fervor@^0.0.62:
+  version "0.0.62"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.0.62.tgz#7104f2c5f8b59e9a9656aefb1e1a80ebd0282993"
   dependencies:
     apollo-local-query "^0.3.0"
     autoprefixer "^7.1.2"
