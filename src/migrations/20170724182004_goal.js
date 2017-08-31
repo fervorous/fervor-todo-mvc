@@ -1,6 +1,7 @@
-exports.up = function(knex, Promise) {
+// db is an instance of knex
+exports.up = function(db, Promise) {
   return Promise.all([
-    knex.schema.createTable('goal', function(table) {
+    db.schema.createTable('goal', function(table) {
       table.increments();
       table.string('name').notNull().defaultTo('');
       table.boolean('completed').notNull().defaultTo(false);
@@ -9,8 +10,8 @@ exports.up = function(knex, Promise) {
   ]);
 };
 
-exports.down = function(knex, Promise) {
+exports.down = function(db, Promise) {
   return Promise.all([
-    knex.schema.dropTable('goal'),
+    db.schema.dropTable('goal'),
   ]);
 };

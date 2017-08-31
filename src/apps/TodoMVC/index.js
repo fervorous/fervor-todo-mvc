@@ -1,8 +1,4 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import gql from 'graphql-tag';
-import { graphql, compose } from 'react-apollo';
-import { Link } from 'react-router-dom';
+import { React, PropTypes, gql, graphql, compose, Link } from 'fervor/lib';
 
 import { allGoals } from './queries';
 import Template from '../../components/Template';

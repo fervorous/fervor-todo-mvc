@@ -1,5 +1,4 @@
-import React from 'react';
-import { graphql } from 'react-apollo';
+import { React, Form } from 'fervor/lib';
 
 import { allGoals, createGoal } from './queries';
 import styles from './styles/todo.scss';
@@ -11,37 +10,31 @@ class CreateTodo extends React.Component {
   }
 
   onKeyPress(e) {
-    if (e.key !== 'Enter') {
+    if (e.key !== 'Enter' || e.target.tagName !== 'FORM') {
       return;
     }
-    this.props.mutate({
-      variables: {
-        "create": {
-          "goal": {
-            "name": e.target.value,
-          }
-        }
-      },
-      update: (proxy, { data }) => {
-        const goal = data.createGoal.goal;
-        const newData = proxy.readQuery({ query: allGoals });
-        newData.allGoals.nodes.push(goal);
-        proxy.writeQuery({ query: allGoals, data: newData });
-      },
-    });
-    e.target.value = '';
+    e.target.submit();
   }
 
   render() {
+    // refetchQueries is only required for lists
     return (
-      <input
-        className={styles.newTodo}
+      <Form
+        mutation={createGoal}
         onKeyPress={this.onKeyPress}
-        placeholder="What needs to be done?"
-        autoFocus=""
-      />
+        refetchQueries={[
+          { query: allGoals },
+        ]}
+      >
+        <input
+          name="create[goal][name]"
+          className={styles.newTodo}
+          placeholder="What needs to be done?"
+          autoFocus=""
+        />
+      </Form>
     );
   }
 }
 
-export default graphql(createGoal)(CreateTodo);
+export default CreateTodo;

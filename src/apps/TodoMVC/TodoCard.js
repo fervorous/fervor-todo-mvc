@@ -1,6 +1,5 @@
 import classnames from 'classnames';
-import React from 'react';
-import { graphql } from 'react-apollo';
+import { React, graphql } from 'fervor/lib';
 
 import { updateGoal } from './queries';
 import DeleteTodo from './DeleteTodo';

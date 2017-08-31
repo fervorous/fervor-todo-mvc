@@ -1,5 +1,4 @@
-import React from 'react';
-import { graphql } from 'react-apollo';
+import { React, graphql } from 'fervor/lib';
 
 import { allGoals, deleteGoal } from './queries';
 import styles from './styles/todo.scss';

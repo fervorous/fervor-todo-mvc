@@ -12,10 +12,10 @@
     "start": "fervor start",
     "start:dev": "fervor startDev",
     "start:dev:debug": "fervor-debug startDev",
-    "start:prod": "fervor start"
+    "start:prod": "NODE_ENV=production fervor start"
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "fervor": "^0.0.62"
+    "fervor": "^0.1.0"
   }
 }

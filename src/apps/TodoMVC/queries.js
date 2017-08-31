@@ -1,4 +1,4 @@
-import { gql } from 'react-apollo';
+import { gql } from 'fervor/lib';
 
 export const allGoals = gql`
   query AllGoals {
