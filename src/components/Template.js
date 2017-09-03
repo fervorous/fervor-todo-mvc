@@ -1,5 +1,4 @@
-import React from 'react';
-import Document from 'fervor/lib/client/components/Document';
+import { React, Document } from 'fervor/lib';
 import styles from './styles/template.scss';
 
 const Template = ({ children, title }) => (
