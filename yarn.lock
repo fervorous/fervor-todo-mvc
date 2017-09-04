@@ -2436,9 +2436,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.2.3.tgz#4b33b288c49ac5bf4263a5c8d9414911df4a280b"
+fervor@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.2.4.tgz#732f980949cedac970899a90c982b7ff622bd8b6"
   dependencies:
     apollo-local-query "^0.3.0"
     autoprefixer "^7.1.2"
@@ -2466,6 +2466,7 @@ fervor@0.2.3:
     eslint-plugin-react "^7.1.0"
     extract-text-webpack-plugin "^3.0.0"
     form-data-to-object "^0.2.0"
+    glob-to-regexp "^0.3.0"
     graphql "^0.10.0"
     graphql-tag "^2.4.2"
     is-node "^1.0.2"
@@ -2478,6 +2479,7 @@ fervor@0.2.3:
     koa-logger-winston "^0.0.2"
     koa-route next
     koa-router "7.2.0"
+    koa-send "^4.1.0"
     koa-static "^4.0.1"
     koa-webpack "^1.0.0"
     loader-utils "^1.1.0"
