@@ -2436,9 +2436,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.2.4.tgz#732f980949cedac970899a90c982b7ff622bd8b6"
+fervor@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.3.0.tgz#a618ad2b0c26c6ab2f50d87a717df421de4d7f64"
   dependencies:
     apollo-local-query "^0.3.0"
     autoprefixer "^7.1.2"
@@ -2480,7 +2480,6 @@ fervor@0.2.4:
     koa-route next
     koa-router "7.2.0"
     koa-send "^4.1.0"
-    koa-static "^4.0.1"
     koa-webpack "^1.0.0"
     loader-utils "^1.1.0"
     minimist "^1.2.0"
@@ -3696,13 +3695,6 @@ koa-send@^4.1.0:
     http-errors "^1.6.1"
     mz "^2.6.0"
     resolve-path "^1.3.3"
-
-koa-static@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/koa-static/-/koa-static-4.0.1.tgz#b99521ed848d7adb79acae9c824d8d8277a8c4d5"
-  dependencies:
-    debug "^2.6.8"
-    koa-send "^4.1.0"
 
 koa-webpack@^1.0.0:
   version "1.0.0"

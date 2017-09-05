@@ -8,8 +8,26 @@
   ],
   "env": {
     "DISABLE_DOT_ENV": {
-      "description": "allows for standard heroku environment variable behavior",
+      "description": "Allows for standard heroku environment variable behavior",
       "value": "true"
+    },
+    "APP_NAME": {
+      "value": "Fervor Todo MVC"
+    },
+    "APP_SHORT_NAME": {
+      "value": "Todos"
+    },
+    "APP_FAVICON": {
+      "value": "/assets/icon_32x32.png"
+    },
+    "APP_ICONS": {
+      "value": "[{ \"src\": \"/assets/icon_192x192.png\", \"type\": \"image/png\", \"sizes\": \"192x192\" }]"
+    },
+    "APP_BACKGROUND_COLOR": {
+      "value": "#4d4d4d"
+    },
+    "APP_THEME_COLOR": {
+      "value": "#f5f5f5"
     }
   }
 }
