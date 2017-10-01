@@ -2471,9 +2471,9 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fervor@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.5.0.tgz#2f962848d4f4d426642e3f4c9f8376f7b9bfa10e"
+fervor@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/fervor/-/fervor-0.5.1.tgz#bbb42e9f80c5cad3a509e6f5fedc3ebcb4f0cb54"
   dependencies:
     apollo-local-query "^0.3.0"
     autoprefixer "^7.1.2"
